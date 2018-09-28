@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Tax Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="src/loanCalculate.js"></script>
+</head>
+
+<body>
+    <p>Loan Amount: Rp<input id="amount" type="number" min="1" max="" onchange="calculateLoan()"></p>
+    <p>Interest Rate: Rp<input id="interest_rate" type="number" min="0" max="100" value="10" step=".1" onchange="calculateLoan()">%</p>
+    <p>Months: Rp<input id="months" type="number" min="1" max="72" step="1" onchange="calculateLoan()"></p>
+    <h2 id="payment"></h2>
+</body>
+
+</html>
